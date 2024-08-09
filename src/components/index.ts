@@ -1,3 +1,4 @@
 import { Sidebar } from "./sidebar";
+import { MentalHealthDialog } from "./mentalHealthDialog";
 
-export { Sidebar };
+export { Sidebar, MentalHealthDialog };

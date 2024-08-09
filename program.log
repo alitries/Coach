@@ -1,0 +1,615 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 17:17:17] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 17:55:28] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 17:55:28] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:06:28] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:06:28] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\habittracker.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:20:31] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:20:31] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\habittracker.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:20:49] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 18:20:49] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 19:48:10] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 19:48:10] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 19:48:12] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 19:48:12] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 19:59:50] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:00:49] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:01] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00)\x00\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:01] "[31m[1m\x09\x01\x00\x00)\x00\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:01] "GET /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:01] "GET /questions HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:31] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00#H\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:02:31] "[31m[1m\x09\x01\x00\x00#H\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:03:01] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00¾\x18\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:03:01] "[31m[1m\x09\x01\x00\x00¾\x18\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:03:31] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00\x84g\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:03:31] "[31m[1m\x09\x01\x00\x00\x84g\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:04:01] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00áJ\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:04:01] "[31m[1m\x09\x01\x00\x00áJ\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+ERROR:werkzeug:127.0.0.1 - - [05/Aug/2024 20:04:25] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00l=\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+INFO:werkzeug:127.0.0.1 - - [05/Aug/2024 20:04:25] "[31m[1m\x09\x01\x00\x00l=\x00\x00\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.8.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x08\x00\x00\x00Windows\x00\x02name\x00\x08\x00\x00\x00Windows\x00\x02architecture\x00\x06\x00\x00\x00AMD64\x00\x02version\x00\x0f\x00\x00\x0010.0.19045-SP0\x00\x00\x02platform\x00\x17\x00\x00\x00CPython 3.11.7.final.0\x00\x00\x00[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:35:25] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:35:36] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:35:55] "[35m[1mPOST /create_user HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:35:58] "[35m[1mPOST /create_user HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:36:06] "[35m[1mPOST /create_user HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:36:15] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:36:45] "[35m[1mPOST /create_user HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:37:10] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:37:10] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:37:12] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:37:12] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:39:25] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:39:25] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:39:27] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:39:27] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:40:41] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:40:41] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:40:42] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:40:42] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:42:02] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:42:02] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:42:04] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:42:04] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:44:46] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:44:46] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:44:48] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:44:48] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:46] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:46] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:48] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:48] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:52] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:52] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:53] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:45:53] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:02] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:02] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:03] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:03] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:25] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:25] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:27] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:46:27] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:48:39] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:48:39] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:48:43] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 00:48:43] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:32:26] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:32:26] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:32:29] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:32:29] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:41:04] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:41:04] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:41:07] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:41:07] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:42:32] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:42:32] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:42:33] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:42:33] "[33mGET /questions HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:08] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:08] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:09] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:09] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:46] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:46] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:47] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:50:47] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:51:05] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:51:05] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:51:06] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:51:06] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:08] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:08] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:09] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:09] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:56] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:57] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:58] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:52:58] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:53:05] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:53:05] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:53:08] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:53:08] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:05] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:05] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:06] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:06] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:29] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:29] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:30] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:30] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:47] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:47] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:48] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:56:48] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:57:17] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:57:17] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:57:18] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:57:18] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:59:00] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:59:00] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:59:02] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 15:59:02] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:06] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:06] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:08] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:08] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:23] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:23] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:25] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:03:25] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:04:14] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:04:51] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:04:51] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:04:53] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:04:53] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:06:28] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:06:28] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:06:29] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:06:29] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:08:58] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:08:58] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:09:00] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:09:00] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:14:03] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:14:04] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:14:05] "OPTIONS /set_reminders HTTP/1.1" 200 -
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 1: Invalid time format for a daily job (valid format is HH:MM(:SS)?)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:06: Invalid number of hours ({} is not between 0 and 23)
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:14:05] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:16:33] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:16:33] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:16:34] "OPTIONS /set_reminders HTTP/1.1" 200 -
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:18: Invalid number of hours ({} is not between 0 and 23)
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:16:34] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:29] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:30] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:31] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:31] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:47] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:47] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:48] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:48] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:58] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:58] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:59] "OPTIONS /set_reminders HTTP/1.1" 200 -
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+ERROR:root:Error scheduling time 28:23: Invalid number of hours ({} is not between 0 and 23)
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:21:59] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:05] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:06] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:07] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:07] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:12] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:12] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:13] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:13] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:35] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:35] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:36] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:25:36] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:28:38] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:28:38] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:28:40] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:28:40] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:29:41] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:29:41] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:29:43] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:29:43] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:55:06] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:55:06] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:55:08] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2024 16:55:08] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2024 12:17:32] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2024 12:17:33] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2024 12:17:34] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2024 12:17:34] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\test.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 13:20:24] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 13:20:24] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 13:20:26] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 13:20:26] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug: * Detected change in 'c:\\Users\\ali\\Desktop\\Coach\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:27:52] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:27:52] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:27:53] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:27:53] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!

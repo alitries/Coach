@@ -10,6 +10,7 @@ import {
   Button,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 interface OptionsDialogProps {
   open: boolean;
@@ -19,21 +20,23 @@ interface OptionsDialogProps {
 const OptionsDialog: React.FC<OptionsDialogProps> = ({ open, onClose }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-      <DialogTitle>Options</DialogTitle>
+      <DialogTitle>Sports</DialogTitle>
       <DialogContent>
         <Grid container spacing={2}>
           <Grid item xs={6}>
             <Card>
               <CardContent>
                 <Typography variant="h5" component="div">
-                  Option 1
+                  Cricket
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Description for option 1.
+                  Talk all about Cricket here.
                 </Typography>
               </CardContent>
               <CardActions>
+                <Link to="/cricket">
                 <Button size="small">Learn More</Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>

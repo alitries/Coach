@@ -1,10 +1,7 @@
 import React from "react";
-import { Home } from "./pages/index";
-import { Sidebar } from "./components/index";
-import {
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { Home, Cricket, HabbitTracker } from "./pages/index";
+import { Sidebar, MentalHealthDialog } from "./components/index";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Theme } from "./config/theme";
 import { ThemeProvider } from "@emotion/react";
 
@@ -31,6 +28,20 @@ const router = createBrowserRouter([
     path: "/home",
     element: <Home />,
   },
+  {
+    path: "/cricket",
+    element: <Cricket />,
+  },
+  {
+    path: "/mental-health",
+    element: <MentalHealthDialog open={false} onClose={function (): void {
+      throw new Error("Function not implemented.");
+    } } />,
+  },
+  {
+    path: "/habbit-tracker",
+    element: <HabbitTracker />,
+  },  
 ]);
 
 function App() {

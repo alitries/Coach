@@ -1,3 +1,5 @@
 import { Home } from "./home";
+import { Cricket } from "./cricket";
+import { HabbitTracker } from "./habbitTracker";
 
-export { Home };
+export { Home, Cricket, HabbitTracker };
