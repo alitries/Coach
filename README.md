@@ -1,5 +1,5 @@
 
-# Coach -Team Clutch
+# Coach.AI -Team Clutch
 
 During the 2024 Olympics, it has become evident that Indian youth possess significant potential in sports, yet we are only tapping into a fraction of this capability. Common obstacles faced globally by youth in sports include inadequate guidance, training, nutrition, and motivation.
 
