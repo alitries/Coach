@@ -1,11 +1,13 @@
 import React from "react";
-import { Home, Cricket, HabbitTracker } from "./pages/index";
+import { Cricket, HabitTracker, PrimaryAgent, Quotes, JavelinCoach } from "./pages/index";
 import { Sidebar, MentalHealthDialog } from "./components/index";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { Theme } from "./config/theme";
 import { ThemeProvider } from "@emotion/react";
+import path from "path";
 
-const Wrapper = () => (
+// Wrapper component that includes the Sidebar and an Outlet for the main content
+const Layout = () => (
   <div style={{ display: "flex", height: "100vh" }}>
     <Sidebar />
     <div
@@ -14,7 +16,7 @@ const Wrapper = () => (
         overflow: "auto",
       }}
     >
-      <Home />
+      <Outlet /> {/* This will render the component based on the route */}
     </div>
   </div>
 );
@@ -22,26 +24,45 @@ const Wrapper = () => (
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Wrapper />,
+    element: <Layout />, // Use Layout for all routes
+    children: [
+      {
+        path: "",
+        element: <PrimaryAgent />, // Default route
+      },
+      {
+        path: "primary-agent",
+        element: <PrimaryAgent />,
+      },
+      {
+        path: "habit-tracker",
+        element: <HabitTracker />,
+      },
+      {
+        path: "cricket",
+        element: <Cricket />,
+      },
+      {
+        path: "javelin-coach",
+        element: <JavelinCoach />,
+      },
+      {
+        path: "quotes",
+        element: <Quotes />,
+      },
+      {
+        path: "mental-health",
+        element: (
+          <MentalHealthDialog
+            open={false}
+            onClose={() => {
+              // Implement onClose functionality if needed
+            }}
+          />
+        ),
+      },
+    ],
   },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "/cricket",
-    element: <Cricket />,
-  },
-  {
-    path: "/mental-health",
-    element: <MentalHealthDialog open={false} onClose={function (): void {
-      throw new Error("Function not implemented.");
-    } } />,
-  },
-  {
-    path: "/habbit-tracker",
-    element: <HabbitTracker />,
-  },  
 ]);
 
 function App() {

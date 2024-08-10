@@ -23,18 +23,12 @@ dependencies:
   '@testing-library/user-event':
     specifier: ^13.5.0
     version: 13.5.0(@testing-library/dom@10.4.0)
-  '@types/googlemaps':
-    specifier: ^3.43.3
-    version: 3.43.3
   '@types/jest':
     specifier: ^27.5.2
     version: 27.5.2
   '@types/node':
     specifier: ^16.18.104
     version: 16.18.104
-  '@types/react':
-    specifier: ^18.3.3
-    version: 18.3.3
   '@types/react-dom':
     specifier: ^18.3.0
     version: 18.3.0
@@ -56,6 +50,9 @@ dependencies:
   googlemaps:
     specifier: ^1.12.0
     version: 1.12.0
+  helmet:
+    specifier: ^7.1.0
+    version: 7.1.0
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -82,6 +79,18 @@ devDependencies:
   '@types/express':
     specifier: ^4.17.21
     version: 4.17.21
+  '@types/google.maps':
+    specifier: ^3.55.12
+    version: 3.55.12
+  '@types/google__maps':
+    specifier: ^0.5.20
+    version: 0.5.20
+  '@types/googlemaps':
+    specifier: ^3.43.3
+    version: 3.43.3
+  '@types/react':
+    specifier: ^18.3.3
+    version: 18.3.3
   '@types/testing-library__jest-dom':
     specifier: ^6.0.0
     version: 6.0.0
@@ -2918,10 +2927,18 @@ packages:
       '@types/qs': 6.9.15
       '@types/serve-static': 1.15.7
 
+  /@types/google.maps@3.55.12:
+    resolution: {integrity: sha512-Q8MsLE+YYIrE1H8wdN69YHHAF8h7ApvF5MiMXh/zeCpP9Ut745mV9M0F4X4eobZ2WJe9k8tW2ryYjLa87IO2Sg==}
+    dev: true
+
+  /@types/google__maps@0.5.20:
+    resolution: {integrity: sha512-RQDE03ikUU2WrFtx2aBCweFtu4/QaJFC2ua6yq66IIlYLh016y0+QiA4GWt3kNYo1j4Vy46SGG5UzWgL1bkyOA==}
+    dev: true
+
   /@types/googlemaps@3.43.3:
     resolution: {integrity: sha512-ZWNoz/O8MPEpiajvj7QiqCY8tTLFNqNZ/a+s+zTV58wFVNAvvqV4bdGfnsjTb5Cs4V6wEsLrX8XRhmnyYJ2Tdg==}
     deprecated: 'Types for the Google Maps browser API have moved to @types/google.maps. Note: these types are not for the googlemaps npm package, which is a Node API.'
-    dev: false
+    dev: true
 
   /@types/graceful-fs@4.1.9:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
@@ -6263,6 +6280,11 @@ packages:
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
+
+  /helmet@7.1.0:
+    resolution: {integrity: sha512-g+HZqgfbpXdCkme/Cd/mZkV0aV3BZZZSugecH03kl38m/Kmdx8jKjBikpDj2cr+Iynv4KpYEviojNdTJActJAg==}
+    engines: {node: '>=16.0.0'}
     dev: false
 
   /hoist-non-react-statics@3.3.2:

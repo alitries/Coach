@@ -10,7 +10,7 @@ const Theme = createTheme({
       main: "#f48fb1", // Pinkish
     },
     background: {
-      default: "#121212", // Dark background
+      default: "#1d1d1d", // Dark background
       paper: "#1e1e1e", // Slightly lighter for cards and other surfaces
     },
     text: {

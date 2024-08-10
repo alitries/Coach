@@ -35,7 +35,7 @@ const OptionsDialog: React.FC<OptionsDialogProps> = ({ open, onClose }) => {
               </CardContent>
               <CardActions>
                 <Link to="/cricket">
-                <Button size="small">Learn More</Button>
+                  <Button size="small">Learn More</Button>
                 </Link>
               </CardActions>
             </Card>
@@ -44,14 +44,16 @@ const OptionsDialog: React.FC<OptionsDialogProps> = ({ open, onClose }) => {
             <Card>
               <CardContent>
                 <Typography variant="h5" component="div">
-                  Option 2
+                  Javelin Coach
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Description for option 2.
+                  Talk all about Javelin to the Javelin Coach here.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Link to="/javelin-coach">
+                  <Button size="small">Learn More</Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>

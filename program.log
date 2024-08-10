@@ -613,3 +613,67 @@ INFO:root:Email sent successfully!
 INFO:root:Email sent successfully!
 INFO:root:Email sent successfully!
 INFO:root:Email sent successfully!
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:47:08] "[33mOPTIONS /find_activities HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Aug/2024 19:47:31] "[33mOPTIONS /find_activities HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:38:57] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:38:57] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:38:59] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:38:59] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:40:50] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:40:50] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:40:52] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:40:52] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:48:14] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:53:32] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:53:37] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:53:40] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:54:19] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:57:46] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:57:59] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 15:58:50] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:00:34] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:00:40] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:00:42] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:02:12] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:06:35] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:06:36] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:06:40] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:06:41] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:09:43] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:09:43] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:09:44] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 16:09:44] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!

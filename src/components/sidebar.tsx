@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import InboxIcon from "@mui/icons-material/Inbox";
 import MailIcon from "@mui/icons-material/Mail";
-import OptionsDialog from "./OptionsDialog"; 
+import OptionsDialog from "./OptionsDialog";
 import { MentalHealthDialog } from "./mentalHealthDialog"; // Import the dialog
 
 const drawerWidth = 240;
@@ -27,8 +27,8 @@ const collapsedWidth = 60;
 
 const Sidebar: React.FC = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const [optionsDialogOpen, setOptionsDialogOpen] = useState(false); // State for OptionsDialog
-  const [mentalHealthDialogOpen, setMentalHealthDialogOpen] = useState(false); // State for MentalHealthDialog
+  const [optionsDialogOpen, setOptionsDialogOpen] = useState(false);
+  const [mentalHealthDialogOpen, setMentalHealthDialogOpen] = useState(false);
 
   const handleOptionsDialogOpen = () => {
     setOptionsDialogOpen(true);
@@ -62,11 +62,20 @@ const Sidebar: React.FC = () => {
           alignItems: "center",
           justifyContent: "space-between",
           minHeight: "64px",
-          padding: "0 16px", // Add padding for some spacing
+          padding: "0 16px",
         }}
       >
-        <Typography variant="h6" noWrap color={"yellow"}>
-          Coach.AI
+        <Typography
+          variant="h6"
+          noWrap
+          color={"Aqua"}
+          className={`collapse-button ${isDrawerOpen ? "open " : "closed"}`}
+          sx={{
+            display: isDrawerOpen ? "flex" : "block",
+            placeContent: "center",
+          }}
+        >
+          <b>{isDrawerOpen ? "Coach.AI" : "C.AI"}</b>
         </Typography>
         <IconButton
           edge="end"
@@ -80,22 +89,26 @@ const Sidebar: React.FC = () => {
       <Divider />
       <List>
         {[
-          { text: "Sports", path: "/sports" },
-          { text: "Quotes", path: "/quotes" },
+          { text: "Sports Coach" },
+          { text: "Primary Agent", path: "/primary-agent" },
+          { text: "Motivational Coach", path: "/quotes" },
           { text: "Habit Tracker", path: "/habit-tracker" },
-          { text: "Mental Health", path: "/mental-health" }, // Mental Health item
+          { text: "Mental Health Booster", path: "/mental-health" },
         ].map((item, index) => (
           <ListItem
             button
             key={item.text}
-            component={item.text === "Mental Health" ? "div" : Link} // Make Mental Health a button instead of a link
+            component={item.text === "Mental Health Booster" ? "div" : Link}
+            to={item.path}
             onClick={
-              item.text === "Sports"
+              item.text === "Sports Coach"
                 ? handleOptionsDialogOpen
-                : item.text === "Mental Health"
+                : item.text === "Mental Health Booster"
                 ? handleMentalHealthDialogOpen
+                : isSmallScreen
+                ? handleDrawerToggle
                 : undefined
-            } // Open the corresponding dialog
+            }
           >
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -134,26 +147,40 @@ const Sidebar: React.FC = () => {
       )}
       <Drawer
         variant={isSmallScreen ? "temporary" : "permanent"}
-        anchor={isSmallScreen ? "top" : "left"} // Anchor to top on small screens
+        anchor={isSmallScreen ? "top" : "left"}
         open={isDrawerOpen}
         onClose={handleDrawerToggle}
         sx={{
-          width: isSmallScreen ? "100%" : isDrawerOpen ? drawerWidth : collapsedWidth,
+          width: isSmallScreen
+            ? "100%"
+            : isDrawerOpen
+            ? drawerWidth
+            : collapsedWidth,
           flexShrink: 0,
           [`& .MuiDrawer-paper`]: {
-            width: isSmallScreen ? "100%" : isDrawerOpen ? drawerWidth : collapsedWidth,
-            height: isSmallScreen ? "auto" : "100%", // Adjust height for top drawer
+            width: isSmallScreen
+              ? "100%"
+              : isDrawerOpen
+              ? drawerWidth
+              : collapsedWidth,
+            height: isSmallScreen ? "auto" : "100%",
             boxSizing: "border-box",
             overflowX: "hidden",
             overflowY: "auto",
-            transition: "width 0.3s, height 0.3s", // Transition for both width and height
+            transition: "width 0.3s, height 0.3s",
           },
         }}
       >
         {drawer}
       </Drawer>
-      <OptionsDialog open={optionsDialogOpen} onClose={handleOptionsDialogClose} /> {/* Existing OptionsDialog */}
-      <MentalHealthDialog open={mentalHealthDialogOpen} onClose={handleMentalHealthDialogClose} /> {/* New MentalHealthDialog */}
+      <OptionsDialog
+        open={optionsDialogOpen}
+        onClose={handleOptionsDialogClose}
+      />
+      <MentalHealthDialog
+        open={mentalHealthDialogOpen}
+        onClose={handleMentalHealthDialogClose}
+      />
     </div>
   );
 };

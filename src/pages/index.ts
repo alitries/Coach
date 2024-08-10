@@ -1,5 +1,7 @@
-import { Home } from "./home";
 import { Cricket } from "./cricket";
-import { HabbitTracker } from "./habbitTracker";
+import { PrimaryAgent } from "./primaryAgent";
+import { HabitTracker } from "./habbitTracker";
+import { Quotes } from "./quotes";
+import { JavelinCoach } from "./javelinCoach";
 
-export { Home, Cricket, HabbitTracker };
+export { Cricket, HabitTracker, PrimaryAgent, Quotes, JavelinCoach };
