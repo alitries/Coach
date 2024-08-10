@@ -104,10 +104,10 @@ const Quotes: React.FC = () => {
   };
 
   const ExampleInputs = [
-    "I want a week's schedule for exercises",
-    "Provide me a recipe of spicy tomato rice",
-    "How to make abs at home",
-    "Provide me recipe for biryani and provide nutritional information about it",
+    "I am feeling low today.",
+    "I had a bad day at work and i dont feel like working out.",
+    // "How to make abs at home",
+    // "Provide me recipe for biryani and provide nutritional information about it",
   ];
 
   return (
@@ -189,7 +189,7 @@ const Quotes: React.FC = () => {
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
           InputProps={{
-            style: { color: "black" },
+            style: { color: "white" },
             endAdornment: (
               <InputAdornment position="end">
                 <IconButton

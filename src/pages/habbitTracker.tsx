@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 import {
   useTheme,
   useMediaQuery,
-  Divider,
-  Box,
-  Typography,
+  // Divider,
+  // Box,
+  // Typography,
 } from "@mui/material";
 import axios from "axios";
 
@@ -262,12 +262,12 @@ const HabitTracker: React.FC = () => {
     }
   };
 
-  const ExampleInputs = [
-    "I want a week's schedule for exercises",
-    "Provide me a recipe of spicy tomato rice",
-    "How to make abs at home",
-    "Provide me recipe for birayani and provide nutritional information about it",
-  ];
+  // const ExampleInputs = [
+  //   "I want a week's schedule for exercises",
+  //   "Provide me a recipe of spicy tomato rice",
+  //   "How to make abs at home",
+  //   "Provide me recipe for birayani and provide nutritional information about it",
+  // ];
 
   return (
     <div
@@ -327,8 +327,8 @@ const HabitTracker: React.FC = () => {
             <b>Habit Tracker:</b> {questions[questionIndex]}
           </ChatBubble>
         </div>
-        <Divider />
-        <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
+        {/* <Divider /> */}
+        {/* <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (
             <Box
               key={index}
@@ -344,7 +344,7 @@ const HabitTracker: React.FC = () => {
               <Typography variant="body2">{example}</Typography>
             </Box>
           ))}
-        </Box>
+        </Box> */}
         <StyledTextField
           className="mb-4 text-white"
           variant="outlined"

@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001';
 
 export const fetchRecreationalActivities = async (
   latitude: number,

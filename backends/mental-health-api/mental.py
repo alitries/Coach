@@ -4,7 +4,7 @@ from uagents import Agent, Model, Context
 import googlemaps
 
 # Set up Google Maps API client with API key
-GOOGLE_MAPS_API_KEY="AIzaSyCUKwEnmXUkjtsV-oMR9sq5Mlj0cKUqte0"
+GOOGLE_MAPS_API_KEY="Your_API_Key_Here"  # Replace "Your_API_Key_Here" with your actual Google Maps API key
 gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY)
 
 # Define an asynchronous function to find recreational activities near a given location

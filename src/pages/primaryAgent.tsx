@@ -21,9 +21,9 @@ const ChatBubble = styled(motion.div)(({ theme }) => ({
   alignItems: "flex-start",
 }));
 
-const UserBubble = styled(ChatBubble)(({ theme }) => ({
-  alignSelf: "flex-end",
-}));
+// const UserBubble = styled(ChatBubble)(({ theme }) => ({
+//   alignSelf: "flex-end",
+// }));
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiInputBase-root": {

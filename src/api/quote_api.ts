@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:80';
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:81';
 
 const fetchQuote = async (feeling: string, context: string) => {
   try {

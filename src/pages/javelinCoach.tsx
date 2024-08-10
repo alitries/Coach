@@ -111,10 +111,10 @@ const JavelinCoach: React.FC = () => {
   };
 
   const ExampleInputs = [
-    "I want a week's schedule for exercises",
-    "Provide me a recipe of spicy tomato rice",
-    "How to make abs at home",
-    "Provide me recipe for biryani and provide nutritional information about it",
+    "What is the correct grip to hold a javelin for optimal throwing technique?",
+    "How should I position my body during the approach run to maximize throwing distance?",
+    "What are the key phases of the javelin throw, and how can I improve each phase?",
+    "What are some beginner drills I can practice to develop strength and technique for javelin throwing?",
   ];
 
   return (

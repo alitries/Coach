@@ -31,7 +31,7 @@ async def find_recreational_activities(location, search_query, radius=1000):
     return results[:1]
 
 # Create an agent instance for handling mental health related activities
-mental = Agent(name="mental", seed="MentalHealthAgent - Team Clutch")
+mental = Agent(name="mental", seed="MentalHealthAgent - Team Clutch", port=8009, endpoint=["http://127.0.0.1:8009/submit"])
 
 # Initialize Flask app
 app = Flask(__name__)

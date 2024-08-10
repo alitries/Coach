@@ -23,36 +23,31 @@ const OptionsDialog: React.FC<OptionsDialogProps> = ({ open, onClose }) => {
       <DialogTitle>Sports</DialogTitle>
       <DialogContent>
         <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <Card>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Cricket
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Talk all about Cricket here.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Link to="/cricket">
-                  <Button size="small">Learn More</Button>
-                </Link>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={6}>
-            <Card>
+          <Grid item xs={12}>
+            <Card
+              sx={{
+                backgroundImage: "url(../images/javelin.webp)",
+                backgroundSize: "50%", // Zoom out the image
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat", // Ensure the image does not repeat
+                color: "white", // Adjust text color for better visibility
+                height: "20rem", // Set the height of the card
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
               <CardContent>
                 <Typography variant="h5" component="div">
                   Javelin Coach
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="white">
                   Talk all about Javelin to the Javelin Coach here.
                 </Typography>
               </CardContent>
               <CardActions>
                 <Link to="/javelin-coach">
-                  <Button size="small">Learn More</Button>
+                  <Button size="small" sx={{ color: "white" }}>Learn More</Button>
                 </Link>
               </CardActions>
             </Card>

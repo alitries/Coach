@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Create an Axios instance if needed (optional)
 const apiClient = axios.create({
-  baseURL: 'http://localhost:5000', // Replace with your Flask server URL
+  baseURL: 'http://localhost:5002', // Replace with your Flask server URL
   timeout: 10000, // Optional: Set a timeout
 });
 
