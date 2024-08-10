@@ -108,3 +108,13 @@ To run the project in your localhost you must run refer to the documentation.
         ```1. python mental.py```
 
         ```2. python app.py```
+
+
+
+
+## Authors
+
+- [@alitries](https://www.github.com/alitries)
+- [@Data-Scientist-Sahil](https://github.com/Data-Scientist-Sahil)
+- [@rishika0704](https://github.com/rishika0704)
+- [@Iamkaran47](https://github.com/Iamkaran47)
