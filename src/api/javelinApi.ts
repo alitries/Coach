@@ -1,5 +1,3 @@
-// src/api.ts
-
 import axios from 'axios';
 
 // Define the base URL of your Flask server

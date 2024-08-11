@@ -126,7 +126,7 @@ async def generate_response(context, query):
 exercise = Agent(name="exercise",
                  port=8002,
                  seed="ExerciseAgent - Team Clutch",
-                 endpoint=["http://127.0.0.1:8002/submit"]
+                 endpoint=["http://127.0.0.1:8005/submit"]
 )
 
 print(exercise.address)  # Print the agent's address

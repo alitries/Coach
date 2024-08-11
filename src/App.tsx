@@ -21,16 +21,15 @@ const Layout = () => (
   </div>
 );
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />, // Use Layout for all routes
     children: [
       {
-        path: "",
-        element: <PrimaryAgent />, // Default route
-      },
-      {
+        index: true,
         path: "primary-agent",
         element: <PrimaryAgent />,
       },
@@ -56,6 +55,7 @@ const router = createBrowserRouter([
           <MentalHealthDialog
             open={false}
             onClose={() => {
+
               // Implement onClose functionality if needed
             }}
           />
