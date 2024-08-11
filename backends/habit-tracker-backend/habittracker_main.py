@@ -66,12 +66,12 @@ def send_email(to_email, subject, message):
     try:
         msg = MIMEText(message)
         msg['Subject'] = subject
-        msg['From'] = "iamkaran41@gmail.com"  # Replace with your email
+        msg['From'] = "your_email_here"  # Replace with your email
         msg['To'] = to_email
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(msg['From'], "rjye qofo yohi yjbd")  # Replace with your password
+        server.login(msg['From'], "your_password_here")  # Replace with your password
         server.sendmail(msg['From'], msg['To'], msg.as_string())
         server.quit()
         print("Email sent successfully!")
