@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   Dialog,
   DialogTitle,
@@ -28,13 +28,7 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
     longitude: string;
   } | null>(null);
 
-  useEffect(() => {
-    if (open) {
-      getUserLocation();
-    }
-  }, [open]);
-
-  const getUserLocation = () => {
+  const getUserLocation = useCallback(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -50,7 +44,13 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
       console.error("Geolocation is not supported by this browser.");
       setLoading(false);
     }
-  };
+  }, []); // Empty dependency array ensures it's only created once
+
+  useEffect(() => {
+    if (open) {
+      getUserLocation();
+    }
+  }, [open, getUserLocation]);
 
   const fetchActivities = async (latitude: number, longitude: number) => {
     setLoading(true);
@@ -115,8 +115,12 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
         "<strong>$1</strong>"
       )
       .replace(/(Name :)/g, "<strong>$1</strong>") // Bold "Name:"
-      .replace(/(Location Link :)(.*)/g, (match, p1, p2) => `${p1} <a href="${p2.trim()}" target="_blank" rel="noopener noreferrer">${p2.trim()}</a>`);
-      // Make links clickable
+      .replace(
+        /(Location Link :)(.*)/g,
+        (match, p1, p2) =>
+          `${p1} <a href="${p2.trim()}" target="_blank" rel="noopener noreferrer">${p2.trim()}</a>`
+      );
+    // Make links clickable
   };
 
   return (

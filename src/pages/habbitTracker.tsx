@@ -138,9 +138,7 @@ const HabitTracker: React.FC = () => {
     setInput("");
 
     // Simulate typing delay
-    for (const char of input) {
-      await new Promise((resolve) => setTimeout(resolve, 30));
-    }
+    await new Promise((resolve) => setTimeout(resolve, 30 * input.length));
 
     setQaHistory([...qaHistory, newQa]);
     setLoading(false);
@@ -149,8 +147,7 @@ const HabitTracker: React.FC = () => {
 
     if (skipAfter[0] > 0) {
       setSkipAfter([skipAfter[0] - 1, skipAfter[1]]);
-    }
-    else if (skipAfter[0] === 0) {
+    } else if (skipAfter[0] === 0) {
       nextQuestionIndex = questionIndex + skipAfter[1] + 1;
       setSkipAfter([-1, 0]);
     }
@@ -353,13 +350,11 @@ const HabitTracker: React.FC = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
-          sx={
-            {
-              
-              "& .MuiInputLabel-root": {
-                color: "white",
-              },
-              "& .MuiOutlinedInput-root": {
+          sx={{
+            "& .MuiInputLabel-root": {
+              color: "white",
+            },
+            "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderColor: "white",
               },
@@ -369,9 +364,8 @@ const HabitTracker: React.FC = () => {
               "&.Mui-focused fieldset": {
                 borderColor: "white",
               },
-            }
-            }
-          }
+            },
+          }}
           InputProps={{
             style: { color: "white", borderColor: "white" },
 
