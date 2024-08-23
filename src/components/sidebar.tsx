@@ -63,20 +63,34 @@ const Sidebar: React.FC = () => {
           justifyContent: "space-between",
           minHeight: "64px",
           padding: "0 16px",
+          backgroundColor: isDrawerOpen ? "transparent" : "inherit",
         }}
       >
-        <Typography
-          variant="h6"
-          noWrap
-          color={"Aqua"}
-          className={`collapse-button ${isDrawerOpen ? "open " : "closed"}`}
-          sx={{
-            display: isDrawerOpen ? "flex" : "block",
-            placeContent: "center",
-          }}
-        >
-          <b>{isDrawerOpen ? "Coach.AI" : "C.AI"}</b>
-        </Typography>
+        {isDrawerOpen ? (
+          <Box
+            sx={{
+              backgroundImage: "url(../images/coach.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "58px",
+            }}
+          />
+        ) : (
+          <Typography
+            variant="h6"
+            noWrap
+            color={"Aqua"}
+            sx={{
+              display: "block",
+              placeContent: "center",
+              textAlign: "center",
+              width: "100%",
+            }}
+          >
+            {/* C.AI */}
+          </Typography>
+        )}
         <IconButton
           edge="end"
           color="inherit"

@@ -237,10 +237,10 @@ const HabitTracker: React.FC = () => {
           },
         };
 
-        await axios.post("http://localhost:5000/create_user", userData);
+        await axios.post("http://localhost:5000/habit/create_user", userData);
         alert("User created successfully!");
 
-        await axios.post("http://localhost:5000/set_reminders", {
+        await axios.post("http://localhost:5000/habit/set_reminders", {
           email: userData.email,
           protein_times: userData.protein_times,
           workout_times: userData.workout_times,

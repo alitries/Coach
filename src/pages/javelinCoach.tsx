@@ -7,7 +7,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { Box, Typography, Divider } from "@mui/material";
-import { fetchQuote } from '../api/javelinApi'; // Import the fetchQuote function
+import { fetchJavelinQuote } from '../api/All_api'; // Import the fetchQuote function
 
 // Styled components for chat bubbles
 const ChatBubble = styled(motion.div)(({ theme }) => ({
@@ -94,7 +94,7 @@ const JavelinCoach: React.FC = () => {
 
     try {
       // Call the API function to fetch the quote
-      const { response } = await fetchQuote(input);
+      const response  = await fetchJavelinQuote(input);
 
       // Add agent's response to chat
       setMessages([...newMessages, { text: response, sender: "agent" }]);

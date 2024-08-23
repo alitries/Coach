@@ -1,17 +1,15 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Blueprint, request, jsonify
 import asyncio
-from uagents import Agent, Context, Model
+from uagents import Model
 from uagents.query import query
 import json
-from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)
+quote_api = Blueprint('quote_api', __name__)
 
 # Model classes for the agent
 class Quote(Model):
-    feeling: str
-    context: str
+    feeling: str  # Represents the user's feeling or problem
+    context: str  # Represents the context of the conversation, if any
 
 class Response(Model):
     response: str
@@ -19,13 +17,8 @@ class Response(Model):
 # Hardcoded address of the quote agent
 quote_address = "agent1q249x2snexu4f6am4rnk4e8dmuw9sqj7x886e7ydp35rnuqqgf9pu5p7yev"
 
-# Route for the main page
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 # Route for handling user input and getting response from the agent
-@app.route('/get_quote', methods=['POST'])
+@quote_api.route('/get_quote', methods=['POST'])
 def get_quote():
     data = request.get_json()  # Use get_json() to parse JSON data
     feeling = data.get('feeling')
@@ -65,6 +58,3 @@ async def query_agent(feeling, context):
     except Exception as e:
         print(f"Error in query_agent: {e}")
         return None
-
-if __name__ == '__main__':
-    app.run(debug=True, port=85)

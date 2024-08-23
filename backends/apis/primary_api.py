@@ -1,12 +1,10 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Blueprint, request, jsonify
 import asyncio
-from uagents import Agent, Context, Model
+from uagents import Model
 from uagents.query import query
 import json
-from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)
+primary_api = Blueprint('primary_api', __name__)
 
 # Define data models for different types of prompts and responses
 class Prompt(Model):
@@ -56,11 +54,7 @@ async def handle_prompt(prompt, context=""):
     except Exception as e:
         return f"Error: {str(e)}"
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/chat', methods=['POST'])
+@primary_api.route('/chat', methods=['POST'])
 def chat():
     try:
         data = request.json
@@ -78,6 +72,3 @@ def chat():
         return jsonify({'response': assistant_response})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-
-if __name__ == '__main__':
-    app.run(debug=True)

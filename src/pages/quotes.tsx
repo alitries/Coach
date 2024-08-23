@@ -7,7 +7,8 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { useTheme, useMediaQuery, Divider, Box, Typography } from "@mui/material";
-import { fetchQuote } from "../api/quote_api";
+// Assuming the module exists and is properly exported
+import { fetchQuote } from "../api/All_api";
 
 const ChatBubble = styled(motion.div)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,

@@ -1,0 +1,70 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 105-556-691
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 20:56:33] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 20:56:33] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 20:56:34] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Aug/2024 20:56:34] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\db_connection.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:27:27] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:27:27] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:27:28] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:27:28] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7127af3b0b2sm7461092b3a.185 - gsmtp')
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7127af16635sm7746518b3a.147 - gsmtp')
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7127aef44d6sm7497719b3a.130 - gsmtp')
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d3f59ac9c3sm7737325a91.9 - gsmtp')
+ERROR:root:Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-7c6b61ddabdsm8593592a12.43 - gsmtp')
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:48:24] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:48:33] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:48:40] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:50:36] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:50:56] "[33mGET /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:50:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 11:53:57] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\habittracker_main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\habittracker_main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\habittracker_main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\habittracker_main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug: * Detected change in 'C:\\Users\\ali\\Desktop\\Coach\\backends\\habit-tracker-backend\\habittracker_main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 684-694-989
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 12:00:42] "OPTIONS /create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 12:00:42] "[35m[1mPOST /create_user HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 12:00:43] "OPTIONS /set_reminders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 12:00:43] "[35m[1mPOST /set_reminders HTTP/1.1[0m" 201 -
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:root:Email sent successfully!
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 18:45:32] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Aug/2024 18:47:56] "[33mOPTIONS /chat HTTP/1.1[0m" 404 -

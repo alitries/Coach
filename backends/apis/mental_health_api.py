@@ -1,7 +1,6 @@
 import asyncio
-from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS  # Import CORS
-from uagents import Agent, Context
+from flask import Blueprint, request, jsonify
+# from uagents import Agent, Context
 import googlemaps
 
 # Set up Google Maps API client with API key
@@ -31,17 +30,12 @@ async def find_recreational_activities(location, search_query, radius=1000):
     return results[:1]
 
 # Create an agent instance for handling mental health related activities
-mental = Agent(name="mental", seed="MentalHealthAgent - Team Clutch", port=8009, endpoint=["http://127.0.0.1:8009/submit"])
+# mental = Agent(name="mental", seed="MentalHealthAgent - Team Clutch", port=8009, endpoint=["http://127.0.0.1:8009/submit"])
 
 # Initialize Flask app
-app = Flask(__name__)
-CORS(app)  # Enable CORS for the entire app
+mental_health_api = Blueprint('mental_health_api', __name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/find_activities', methods=['POST'])
+@mental_health_api.route('/find_activities', methods=['POST'])
 def find_activities():
     user_data = request.json
     latitude = user_data.get('latitude')
@@ -83,6 +77,3 @@ def find_activities():
     print(response)
 
     return jsonify({"message": response})
-
-if __name__ == "__main__":
-    app.run(debug=True)

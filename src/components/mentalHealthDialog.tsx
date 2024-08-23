@@ -10,7 +10,7 @@ import {
   TextField,
   Box,
 } from "@mui/material";
-import { fetchRecreationalActivities } from "../api/mental_api"; // Ensure the path is correct
+import { fetchRecreationalActivities } from "../api/All_api"; // Ensure the path is correct
 
 interface MentalHealthDialogProps {
   open: boolean;

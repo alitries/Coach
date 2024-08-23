@@ -1,5 +1,4 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Blueprint, request, jsonify
 import schedule
 import time
 import threading
@@ -7,9 +6,7 @@ import smtplib
 from email.mime.text import MIMEText
 import nltk
 from nltk.corpus import stopwords
-import datetime
-from pymongo import MongoClient
-from db_connection import get_mongo_client
+from habit_tracker.db_connection import get_mongo_client
 import logging
 
 def convert_to_24hour(time_str):
@@ -48,8 +45,10 @@ except LookupError:
     nltk.download('stopwords')
 
 # Initialize Flask app
-app = Flask(__name__)
-CORS(app, origins="http://localhost:3000")  # Enable CORS for all routes
+# app = Flask(__name__)
+# CORS(app, origins="http://localhost:3000")  # Enable CORS for all routes
+
+habit_api = Blueprint('habit_api', __name__)
 
 # MongoDB client setup
 client = get_mongo_client()
@@ -66,12 +65,12 @@ def send_email(to_email, subject, message):
     try:
         msg = MIMEText(message)
         msg['Subject'] = subject
-        msg['From'] = "your_email_here"  # Replace with your email
+        msg['From'] = "iamkaran41@gmail.com"  # Replace with your email
         msg['To'] = to_email
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(msg['From'], "your_password_here")  # Replace with your password
+        server.login(msg['From'], "rjye qofo yohi yjbd")  # Replace with your password
         server.sendmail(msg['From'], msg['To'], msg.as_string())
         server.quit()
         print("Email sent successfully!")
@@ -80,7 +79,7 @@ def send_email(to_email, subject, message):
         print(f"Error sending email: {str(e)}")
         logging.error(f"Error sending email: {str(e)}")
 
-@app.route('/create_user', methods=['POST'])
+@habit_api.route('/create_user', methods=['POST'])
 def create_user():
     data = request.get_json()
     user_data = {
@@ -93,7 +92,7 @@ def create_user():
     user_data_collection.insert_one(user_data)
     return jsonify({"message": "User created successfully"}), 201
 
-@app.route('/set_reminders', methods=['POST'])
+@habit_api.route('/set_reminders', methods=['POST'])
 def set_reminders():
     data = request.get_json()
     email = data.get('email')
@@ -120,11 +119,10 @@ def set_reminders():
     return jsonify({"message": "Reminders set successfully"}), 201
 
 def run_scheduler():
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-if __name__ == '__main__':
-    scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+    def __run():
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+    
+    scheduler_thread = threading.Thread(target=__run, daemon=True)
     scheduler_thread.start()
-    app.run(port=5000, debug=True)

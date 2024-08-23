@@ -1,14 +1,10 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Blueprint, request, jsonify
 import asyncio
-from uagents import Agent, Context, Model
+from uagents import Model
 from uagents.query import query
-from uagents.envelope import Envelope
 import json
-from flask  import Flask, jsonify
-from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)
+javelin_api = Blueprint('javelin_api', __name__)
 
 # Model classes for the agent
 class JavelinePrompt(Model):
@@ -20,15 +16,11 @@ class Response(Model):
 # Hardcoded address of the quote agent
 quote_address = "agent1qguv0nuncv0r5h3kdsepwjd6w2g84cdl489nalzx5syrm6rudqhzsccmetx"
 
-# Route for the main page
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 # Route for handling user input and getting response from the agent
-@app.route('/get_quote', methods=['POST'])
+@javelin_api.route('/get_quote', methods=['POST'])
 def get_quote():
-    prompt = request.form['prompt']
+    data = request.get_json()  # Use get_json() to parse JSON data
+    prompt = data.get('prompt')
     
     # Sending and receiving response from the agent
     loop = asyncio.new_event_loop()
@@ -53,9 +45,3 @@ async def query_agent(prompt):
     data = json.loads(response.decode_payload())
     print(data)
     return data
-    
-    # data = json.loads(response.decode_payload())
-    # return data
-
-if __name__ == '__main__':
-    app.run(debug=True, port=83)
