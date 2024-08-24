@@ -117,7 +117,10 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
       .replace(/(Name :)/g, "<strong>$1</strong>") // Bold "Name:"
       .replace(
         /(Location Link :)(.*)/g,
-        (match, p1, p2) =>
+        (
+          p1,
+          p2 // match removed
+        ) =>
           `${p1} <a href="${p2.trim()}" target="_blank" rel="noopener noreferrer">${p2.trim()}</a>`
       );
     // Make links clickable

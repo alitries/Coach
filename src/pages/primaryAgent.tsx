@@ -6,7 +6,7 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
-import { Box, Typography, Divider } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import axios from "axios";
 
 // Styled components for chat bubbles
@@ -150,8 +150,6 @@ const PrimaryAgent: React.FC = () => {
           ))}
           <div ref={messagesEndRef} /> {/* Ref to scroll to */}
         </div>
-
-        <Divider />
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (

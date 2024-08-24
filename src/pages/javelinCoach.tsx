@@ -6,8 +6,8 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
-import { Box, Typography, Divider } from "@mui/material";
-import { fetchJavelinQuote } from '../api/All_api'; // Import the fetchQuote function
+import { Box, Typography } from "@mui/material";
+import { fetchJavelinQuote } from "../api/All_api"; // Import the fetchQuote function
 
 // Styled components for chat bubbles
 const ChatBubble = styled(motion.div)(({ theme }) => ({
@@ -89,12 +89,15 @@ const JavelinCoach: React.FC = () => {
     setLoading(true);
 
     // Add user's message to chat
-    const newMessages: Message[] = [...messages, { text: input, sender: "user" as "user" }];
+    const newMessages: Message[] = [
+      ...messages,
+      { text: input, sender: "user" as "user" },
+    ];
     setMessages(newMessages);
 
     try {
       // Call the API function to fetch the quote
-      const response  = await fetchJavelinQuote(input);
+      const response = await fetchJavelinQuote(input);
 
       // Add agent's response to chat
       setMessages([...newMessages, { text: response, sender: "agent" }]);
@@ -147,8 +150,6 @@ const JavelinCoach: React.FC = () => {
           ))}
           <div ref={messagesEndRef} /> {/* Ref to scroll to */}
         </div>
-
-        <Divider />
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (

@@ -6,7 +6,12 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
-import { useTheme, useMediaQuery, Divider, Box, Typography } from "@mui/material";
+import {
+  useTheme,
+  useMediaQuery,
+  Box,
+  Typography,
+} from "@mui/material";
 // Assuming the module exists and is properly exported
 import { fetchQuote } from "../api/All_api";
 
@@ -62,7 +67,9 @@ const Quotes: React.FC = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [qaHistory, setQaHistory] = useState<{ question: string; answer: string }[]>([]);
+  const [qaHistory, setQaHistory] = useState<
+    { question: string; answer: string }[]
+  >([]);
   const [label, setLabel] = useState<string>("");
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -160,20 +167,20 @@ const Quotes: React.FC = () => {
             </div>
           ))}
         </div>
-        <Divider />
+
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (
             <Box
               key={index}
               sx={{
-                border: '1px solid #ccc',
-                borderRadius: '4px',
-                padding: '8px',
-                width: '48%', // Adjust width to fit two boxes side by side
-                textAlign: 'center',
-                backgroundColor: '#1d1d1d',
-                color: 'white',
-                cursor: 'pointer',
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+                padding: "8px",
+                width: "48%", // Adjust width to fit two boxes side by side
+                textAlign: "center",
+                backgroundColor: "#1d1d1d",
+                color: "white",
+                cursor: "pointer",
               }}
               onClick={() => setInput(example)}
             >

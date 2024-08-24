@@ -20,7 +20,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import InboxIcon from "@mui/icons-material/Inbox";
 import MailIcon from "@mui/icons-material/Mail";
 import OptionsDialog from "./OptionsDialog";
-import { MentalHealthDialog } from "./mentalHealthDialog"; // Import the dialog
+import { MentalHealthDialog } from "./mentalHealthDialog";
 
 const drawerWidth = 240;
 const collapsedWidth = 60;
@@ -87,9 +87,7 @@ const Sidebar: React.FC = () => {
               textAlign: "center",
               width: "100%",
             }}
-          >
-            {/* C.AI */}
-          </Typography>
+          />
         )}
         <IconButton
           edge="end"
@@ -100,25 +98,29 @@ const Sidebar: React.FC = () => {
           <MenuIcon />
         </IconButton>
       </Box>
-      <Divider />
+
       <List>
         {[
-          { text: "Sports Coach" },
+          { text: "Sports Coach", dialogOpen: handleOptionsDialogOpen },
           { text: "Primary Agent", path: "/primary-agent" },
           { text: "Motivational Coach", path: "/quotes" },
           { text: "Habit Tracker", path: "/habit-tracker" },
-          { text: "Mental Health Booster", path: "/mental-health" },
+          {
+            text: "Mental Health Booster",
+            dialogOpen: handleMentalHealthDialogOpen,
+          },
         ].map((item, index) => (
           <ListItem
             button
             key={item.text}
-            component={item.text === "Mental Health Booster" ? "div" : Link}
+            component={item.path ? Link : "div"}
             to={item.path}
             onClick={
-              item.text === "Sports Coach"
-                ? handleOptionsDialogOpen
-                : item.text === "Mental Health Booster"
-                ? handleMentalHealthDialogOpen
+              item.dialogOpen
+                ? () => {
+                    item.dialogOpen();
+                    if (isSmallScreen) handleDrawerToggle();
+                  }
                 : isSmallScreen
                 ? handleDrawerToggle
                 : undefined
