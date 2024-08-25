@@ -155,7 +155,7 @@ async def message_handler(ctx: Context, sender: str, msg: ExercisePrompt):
     response = "Excercise is working"
 # 
     ctx.logger.info(f"Result: {response}")
-    await ctx.send(sender, Response(response=response))  # Send the generated response back to the sender
+    # await ctx.send(sender, Response(response=response))  # Send the generated response back to the sender
 
 # Entry point of the script; runs the agent
 if __name__ == "__main__":

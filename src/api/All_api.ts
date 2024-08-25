@@ -55,14 +55,14 @@ export const fetchJavelinQuote = async (prompt: string) => {
 // ----- Recreational Activities API -----
 export const fetchRecreationalActivities = async (latitude: number, longitude: number) => {
   try {
-    const response = await axios.post("/mental_health/find_activities", { latitude, longitude }, {
+    const response = await apiClient.post("/mental_health/find_activities", { latitude, longitude }, {
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
-    if (response.data && response.data.response) {
-      return response.data.response;
+    if (response.data && response.data.message) {
+      return response.data.message;
     } else {
       throw new Error('Unexpected response format');
     }

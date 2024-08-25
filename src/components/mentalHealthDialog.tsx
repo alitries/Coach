@@ -22,7 +22,7 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
   onClose,
 }) => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [message, setMessage] = useState<string | null>(null);
+  const [message, setMessage] = useState<string[] | null>(null);
   const [manualLocation, setManualLocation] = useState<{
     latitude: string;
     longitude: string;
@@ -55,14 +55,12 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
   const fetchActivities = async (latitude: number, longitude: number) => {
     setLoading(true);
     try {
-      const messageData = await fetchRecreationalActivities(
-        latitude,
-        longitude
-      );
+      const messageData = await fetchRecreationalActivities(latitude, longitude);
+      console.log("Fetched messageData:", messageData); // Debugging line
       setMessage(messageData);
     } catch (error) {
       console.error("Failed to fetch activities", error);
-      setMessage("Failed to fetch activities. Please try again later.");
+      setMessage(["Failed to fetch activities. Please try again later."]);
     } finally {
       setLoading(false);
     }
@@ -81,49 +79,19 @@ const MentalHealthDialog: React.FC<MentalHealthDialogProps> = ({
     }
   };
 
-  const formatMessage = (message: string) => {
+  const formatMessage = (messages: string[]) => {
     // Split the message by newline for easier formatting
-    const sections = message.split("\n");
-
     return (
       <Box>
-        {sections.map((section, index) => (
+        {messages.map((msg, index) => (
           <Typography key={index} paragraph>
-            {/* Bold the section if it ends with a question mark */}
             <span
-              dangerouslySetInnerHTML={{ __html: formatSection(section) }}
+              dangerouslySetInnerHTML={{ __html: msg }}
             />
           </Typography>
         ))}
       </Box>
     );
-  };
-
-  const formatSection = (section: string) => {
-    return section
-      .replace(/(Have you tried any of the.*?)(?=\n|$)/g, "<strong>$1</strong>")
-      .replace(
-        /(Are you interested in visiting any of the parks in your area.*?)(?=\n|$)/g,
-        "<strong>$1</strong>"
-      )
-      .replace(
-        /(Would you like to join a sports club in your area.*?)(?=\n|$)/g,
-        "<strong>$1</strong>"
-      )
-      .replace(
-        /(Are you interested in joining a book club in your area.*?)(?=\n|$)/g,
-        "<strong>$1</strong>"
-      )
-      .replace(/(Name :)/g, "<strong>$1</strong>") // Bold "Name:"
-      .replace(
-        /(Location Link :)(.*)/g,
-        (
-          p1,
-          p2 // match removed
-        ) =>
-          `${p1} <a href="${p2.trim()}" target="_blank" rel="noopener noreferrer">${p2.trim()}</a>`
-      );
-    // Make links clickable
   };
 
   return (

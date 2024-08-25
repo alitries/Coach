@@ -62,6 +62,9 @@ dependencies:
   react-dom:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
+  react-google-button:
+    specifier: ^0.8.0
+    version: 0.8.0(react@18.3.1)
   react-router-dom:
     specifier: ^6.25.1
     version: 6.25.1(react-dom@18.3.1)(react@18.3.1)
@@ -9963,6 +9966,15 @@ packages:
 
   /react-error-overlay@6.0.11:
     resolution: {integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==}
+    dev: false
+
+  /react-google-button@0.8.0(react@18.3.1):
+    resolution: {integrity: sha512-0u6mbDcTUmWzgXsld8FJpbrXP+zDsNQVYPIt225aBqwgJ/CdrDiep1PZOpnyntyjsejWG0TtQr6uZB4eIaXlJQ==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.3.1
     dev: false
 
   /react-is@16.13.1:

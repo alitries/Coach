@@ -4,7 +4,7 @@ from flask import Blueprint, request, jsonify
 import googlemaps
 
 # Set up Google Maps API client with API key
-API_KEY = "AIzaSyCUKwEnmXUkjtsV-oMR9sq5Mlj0cKUqte0"
+API_KEY = "AIzaSyBonc0jD3Bf7fUbDxQ8jbo5W-3HWI_mFnk"
 gmaps = googlemaps.Client(key=API_KEY)
 
 # Define an asynchronous function to find recreational activities near a given location
@@ -53,25 +53,11 @@ def find_activities():
     activities4 = asyncio.run(find_recreational_activities(user_location, search_query="Book Club"))
 
     # Construct the detailed response message
-    response = f"""
-                Have you tried any of the yoga centres in your area?
-                Name : {activities1[0]["name"] if activities1 else 'No results found'}
-                Location Link : {activities1[0]["maps_link"] if activities1 else 'N/A'}
-
-                Are you interested in visiting any of the parks in your area?
-                Name : {activities2[0]["name"] if activities2 else 'No results found'}
-                Location Link : {activities2[0]["maps_link"] if activities2 else 'N/A'}
-
-                Would you like to join a sports club in your area?
-                Name : {activities3[0]["name"] if activities3 else 'No results found'}
-                Location Link : {activities3[0]["maps_link"] if activities3 else 'N/A'}
-                
-                Are you interested in joining a book club in your area?
-                Name : {activities4[0]["name"] if activities4 else 'No results found'}
-                Location Link : {activities4[0]["maps_link"] if activities4 else 'N/A'}
-                
-                You should try some new activities like playing football, visiting a cafe, and making new friends.
-                """
+    response = [f"""Have you tried any of the yoga centres in your area?<br />Name : {activities1[0]["name"] if activities1 else 'No results found'}<br />Location Link : <a href="{activities1[0]["maps_link"] if activities1 else '#'}" target="__blank">{activities1[0]["maps_link"] if activities1 else 'N/A'}</a>""",
+                f"""Are you interested in visiting any of the parks in your area?<br />Name : {activities2[0]["name"] if activities2 else 'No results found'}<br />Location Link : <a href="{activities2[0]["maps_link"] if activities1 else '#'}" target="__blank">{activities2[0]["maps_link"] if activities2 else 'N/A'}</a>""",
+                f"""Would you like to join a sports club in your area?<br />Name : {activities3[0]["name"] if activities3 else 'No results found'}<br />Location Link : <a href="{activities3[0]["maps_link"] if activities1 else '#'}" target="__blank">{activities3[0]["maps_link"] if activities3 else 'N/A'}</a>""",
+                f"""Are you interested in joining a book club in your area?<br />Name : {activities4[0]["name"] if activities4 else 'No results found'}<br />Location Link : <a href="{activities4[0]["maps_link"] if activities1 else '#'}" target="__blank">{activities4[0]["maps_link"] if activities4 else 'N/A'}</a>""",
+                f"""You should try some new activities like playing football, visiting a cafe, and making new friends."""]
 
     # Log the constructed response (optional)
     print(response)

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Drawer,
   List,
@@ -21,11 +21,13 @@ import InboxIcon from "@mui/icons-material/Inbox";
 import MailIcon from "@mui/icons-material/Mail";
 import OptionsDialog from "./OptionsDialog";
 import { MentalHealthDialog } from "./mentalHealthDialog";
+import { getAuth } from "firebase/auth";
 
 const drawerWidth = 240;
 const collapsedWidth = 60;
 
 const Sidebar: React.FC = () => {
+  const [userName, setUserName] = useState<string | null>(null);
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [optionsDialogOpen, setOptionsDialogOpen] = useState(false);
   const [mentalHealthDialogOpen, setMentalHealthDialogOpen] = useState(false);
@@ -54,40 +56,55 @@ const Sidebar: React.FC = () => {
     theme.breakpoints.down("sm")
   );
 
+  useEffect(() => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (user) {
+      setUserName(user.displayName || "User"); // Display a default name if displayName is null
+    }
+  }, []);
+
+
   const drawer = (
     <>
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           minHeight: "64px",
           padding: "0 16px",
           backgroundColor: isDrawerOpen ? "transparent" : "inherit",
+          // textAlign:"center"
         }}
       >
         {isDrawerOpen ? (
-          <Box
-            sx={{
-              backgroundImage: "url(../images/coach.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "58px",
-            }}
-          />
+          <Typography
+          variant="h6"
+          noWrap
+          color="Aqua"
+          sx={{
+            display: "block",
+            placeContent: "center",
+            textAlign: "center",
+            width: "100%",
+          }}
+        >
+          {userName ? `Welcome, ${userName}` : "Welcome to Coach.AI"}
+        </Typography>
         ) : (
           <Typography
-            variant="h6"
-            noWrap
-            color={"Aqua"}
-            sx={{
-              display: "block",
-              placeContent: "center",
-              textAlign: "center",
-              width: "100%",
-            }}
-          />
+          variant="h6"
+          noWrap
+          color="Aqua"
+          sx={{
+            display: "block",
+            placeContent: "center",
+            textAlign: "center",
+            width: "100%",
+          }}
+        >
+        </Typography>
         )}
         <IconButton
           edge="end"

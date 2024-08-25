@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_cors import CORS
-
 from apis.quote_api import quote_api
 from apis.javelin_api import javelin_api
 from apis.mental_health_api import mental_health_api
