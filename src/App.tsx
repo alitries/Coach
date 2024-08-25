@@ -68,7 +68,6 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   );
 };
 
-// Wrapper component that includes the Sidebar and an Outlet for the main content
 const Layout: React.FC = () => (
   <div style={{ display: "flex", height: "100vh" }}>
     <Sidebar />
@@ -78,7 +77,7 @@ const Layout: React.FC = () => (
         overflow: "auto",
       }}
     >
-      <Outlet /> {/* This will render the component based on the route */}
+      <Outlet />
     </div>
   </div>
 );
@@ -151,14 +150,7 @@ const router = createBrowserRouter([
       },
       {
         path: "mental-health",
-        element: (
-          <MentalHealthDialog
-            open={false}
-            onClose={() => {
-              // Implement onClose functionality if needed
-            }}
-          />
-        ),
+        element: <MentalHealthDialog open={false} onClose={() => {}} />,
       },
     ],
   },

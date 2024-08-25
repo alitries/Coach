@@ -89,20 +89,18 @@ const PrimaryAgent: React.FC = () => {
 
   const handleSubmit = async () => {
     setLoading(true);
-
     try {
       const response = await axios.post("http://localhost:5000/primary/chat", {
         prompt: input,
         context: "",
       });
-
       if (response.data && response.data.response) {
         setMessages([
           ...messages,
           { text: input, sender: "user" },
           { text: response.data.response, sender: "agent" },
         ]);
-        setInput(""); // Clear the input field after sending
+        setInput(""); 
       } else {
         console.error("No response received from the server");
       }
