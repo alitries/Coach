@@ -124,7 +124,6 @@ const JavelinCoach: React.FC = () => {
     <div className="flex flex-col h-screen p-6">
       <div className="flex flex-col flex-grow">
         <div className="flex flex-col flex-grow overflow-auto p-4 space-y-2">
-          {/* Display messages */}
           {messages.map((message, index) => (
             <ChatBubble
               key={index}

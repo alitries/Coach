@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Drawer,
   List,
@@ -17,17 +17,18 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import InboxIcon from "@mui/icons-material/Inbox";
-import MailIcon from "@mui/icons-material/Mail";
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
+import TrackChangesIcon from "@mui/icons-material/TrackChanges";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import OptionsDialog from "./OptionsDialog";
 import { MentalHealthDialog } from "./mentalHealthDialog";
-import { getAuth } from "firebase/auth";
 
 const drawerWidth = 240;
 const collapsedWidth = 60;
 
 const Sidebar: React.FC = () => {
-  const [userName, setUserName] = useState<string | null>(null);
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [optionsDialogOpen, setOptionsDialogOpen] = useState(false);
   const [mentalHealthDialogOpen, setMentalHealthDialogOpen] = useState(false);
@@ -56,55 +57,41 @@ const Sidebar: React.FC = () => {
     theme.breakpoints.down("sm")
   );
 
-  useEffect(() => {
-    const auth = getAuth();
-    const user = auth.currentUser;
-    if (user) {
-      setUserName(user.displayName || "User"); // Display a default name if displayName is null
-    }
-  }, []);
-
-
   const drawer = (
     <>
       <Box
         sx={{
+
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",
           minHeight: "64px",
           padding: "0 16px",
           backgroundColor: isDrawerOpen ? "transparent" : "inherit",
-          // textAlign:"center"
         }}
       >
         {isDrawerOpen ? (
-          <Typography
-          variant="h6"
-          noWrap
-          color="Aqua"
-          sx={{
-            display: "block",
-            placeContent: "center",
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
-          {userName ? `Welcome, ${userName}` : "Welcome to Coach.AI"}
-        </Typography>
+          <Box
+            sx={{
+              backgroundImage: "url(../images/coach.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "58px",
+            }}
+          />
         ) : (
           <Typography
-          variant="h6"
-          noWrap
-          color="Aqua"
-          sx={{
-            display: "block",
-            placeContent: "center",
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
-        </Typography>
+            variant="h6"
+            noWrap
+            color={"Aqua"}
+            sx={{
+              display: "block",
+              placeContent: "center",
+              textAlign: "center",
+              width: "100%",
+            }}
+          />
         )}
         <IconButton
           edge="end"
@@ -118,15 +105,32 @@ const Sidebar: React.FC = () => {
 
       <List>
         {[
-          { text: "Sports Coach", dialogOpen: handleOptionsDialogOpen },
-          { text: "Primary Agent", path: "/primary-agent" },
-          { text: "Motivational Coach", path: "/quotes" },
-          { text: "Habit Tracker", path: "/habit-tracker" },
+          {
+            text: "Sports Coach",
+            icon: <SportsBasketballIcon />,
+            dialogOpen: handleOptionsDialogOpen,
+          },
+          {
+            text: "Primary Agent",
+            icon: <AccountCircleIcon />,
+            path: "/primary-agent",
+          },
+          {
+            text: "Motivational Coach",
+            icon: <EmojiObjectsIcon />,
+            path: "/quotes",
+          },
+          {
+            text: "Habit Tracker",
+            icon: <TrackChangesIcon />,
+            path: "/habit-tracker",
+          },
           {
             text: "Mental Health Booster",
+            icon: <FavoriteIcon />,
             dialogOpen: handleMentalHealthDialogOpen,
           },
-        ].map((item, index) => (
+        ].map((item) => (
           <ListItem
             button
             key={item.text}
@@ -143,9 +147,7 @@ const Sidebar: React.FC = () => {
                 : undefined
             }
           >
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
+            <ListItemIcon>{item.icon}</ListItemIcon>
             {isDrawerOpen && <ListItemText primary={item.text} />}
           </ListItem>
         ))}

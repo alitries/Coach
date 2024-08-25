@@ -8,8 +8,8 @@ import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { Box, Typography } from "@mui/material";
 import axios from "axios";
+import { getAuth } from "firebase/auth";
 
-// Styled components for chat bubbles
 const ChatBubble = styled(motion.div)(({ theme }) => ({
   borderRadius: 20,
   padding: theme.spacing(2),
@@ -20,10 +20,6 @@ const ChatBubble = styled(motion.div)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "flex-start",
 }));
-
-// const UserBubble = styled(ChatBubble)(({ theme }) => ({
-//   alignSelf: "flex-end",
-// }));
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiInputBase-root": {
@@ -60,7 +56,9 @@ const PrimaryAgent: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [label, setLabel] = useState<string>("");
+  const [showWelcome, setShowWelcome] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [userName, setUserName] = useState<string | null>(null);
 
   useEffect(() => {
     const labels = [
@@ -81,6 +79,14 @@ const PrimaryAgent: React.FC = () => {
     }
   }, [messages]);
 
+  useEffect(() => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (user) {
+      setUserName(user.displayName || "User");
+    }
+  }, []);
+
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       handleSubmit();
@@ -100,7 +106,8 @@ const PrimaryAgent: React.FC = () => {
           { text: input, sender: "user" },
           { text: response.data.response, sender: "agent" },
         ]);
-        setInput(""); 
+        setInput("");
+        setShowWelcome(false); // Hide the welcome message
       } else {
         console.error("No response received from the server");
       }
@@ -120,9 +127,31 @@ const PrimaryAgent: React.FC = () => {
 
   return (
     <div className="flex flex-col h-screen p-6">
-      <div className="flex flex-col flex-grow">
-        <div className="flex flex-col flex-grow overflow-auto p-4 space-y-2">
-          {/* Display messages */}
+      <div className="flex flex-col flex-grow relative">
+        {showWelcome && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <Typography
+                variant="h1"
+                className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+              >
+                {userName ? `Hello, ${userName}` : "Welcome to Coach.AI"}
+              </Typography>
+              <Typography
+                variant="h6"
+                color="textSecondary"
+                className="text-start mt-2"
+              >
+                How can I help you today?
+              </Typography>
+            </div>
+          </div>
+        )}
+        <div
+          className={`flex flex-col flex-grow overflow-auto p-4 space-y-2 ${
+            showWelcome ? "opacity-0" : "opacity-100"
+          }`}
+        >
           {messages.map((message, index) => (
             <ChatBubble
               key={index}
@@ -146,7 +175,7 @@ const PrimaryAgent: React.FC = () => {
               </Typography>
             </ChatBubble>
           ))}
-          <div ref={messagesEndRef} /> {/* Ref to scroll to */}
+          <div ref={messagesEndRef} />
         </div>
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
@@ -160,6 +189,7 @@ const PrimaryAgent: React.FC = () => {
                 width: "48%",
                 textAlign: "center",
                 backgroundColor: "rgba(0, 0, 0, 0.02)",
+                cursor: "pointer", // Add cursor pointer for better UX
               }}
               onClick={() => setInput(example)}
             >
