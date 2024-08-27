@@ -27,9 +27,9 @@ class GeneralTalkingPrompt(Model):
 
 # Addresses of the different agents responsible for handling specific tasks
 prompt_address = "agent1qglw3d720l82th35rkfaufjcstlklsqweu3rkfr7dchq493gmhc65hp6aqy"
-exercise_address = "agent1qf3kgvh33lley2k0fgs3qwkeeytg300kz6t03n3eyvd7udsm6kttcrs0c9z"
-recipe_address = "agent1qdtdt3l7qtgva7fud7jr99s55nfwedur8dem0p5unutgysd4rdmqksf49p7"
-general_talking_address = "agent1qvc5rkpw9jr4cp40f9ez69n2suqgvxwu4j9y8upl9amvk7wndge4u8rgy0a"
+exercise_address = "agent1q06c6pp2dhsv86yz9tehxa0525xt8qfmu28p0hnx894yjhh3g6kp7ls2tk8"
+recipe_address = "agent1qwqvnh74245xayv5qe9r92wf95pw8yv8nzvz2m4ydn2vpqze5fmky53rytk"
+general_talking_address = "agent1q02uj259gshfs7rhr8kpfdr6paalkjtstc5r8np8z20j3tgm64v5y8f873w"
 
 # Function to handle the user prompt and communicate with the agents
 async def handle_prompt(prompt, context=""):
