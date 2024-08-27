@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base URLs
 const API_BASE = "http://localhost:5000";
-const apiClient = axios.create({ baseURL: API_BASE, timeout: 10000 });
+const apiClient = axios.create({ baseURL: API_BASE, timeout: 100000 });
 
 // ----- Users and Reminders API -----
 export const createUser = (userData: any) => apiClient.post('/habit/users', userData);

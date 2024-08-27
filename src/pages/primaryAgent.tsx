@@ -168,10 +168,16 @@ const PrimaryAgent: React.FC = () => {
                   message.sender === "user" ? "flex-end" : "flex-start",
               }}
             >
-              <Typography variant="body1">
-                {message.sender === "user"
-                  ? `You: ${message.text}`
-                  : `Agent: ${message.text}`}
+              <Typography variant="body1" className="font-bold">
+                {message.sender === "user" ? (
+                  <>
+                    <strong>You:</strong> {message.text}
+                  </>
+                ) : (
+                  <>
+                    <strong>Agent:</strong> {message.text}
+                  </>
+                )}
               </Typography>
             </ChatBubble>
           ))}

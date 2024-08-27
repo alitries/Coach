@@ -22,8 +22,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import OptionsDialog from "./OptionsDialog";
-import { MentalHealthDialog } from "./mentalHealthDialog";
+import { OptionsDialog, MentalHealthDialog } from "./index";
 
 const drawerWidth = 240;
 const collapsedWidth = 60;
@@ -61,7 +60,6 @@ const Sidebar: React.FC = () => {
     <>
       <Box
         sx={{
-
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",

@@ -89,7 +89,7 @@ from uagents import Agent, Context, Model
 #     return result
 
 # Define data models for handling requests and responses
-class QuotePrompt(Model):
+class Quote(Model):
     feeling: str  # Represents the user's feeling or problem
     context: str  # Represents the context of the conversation, if any
 
@@ -113,8 +113,8 @@ async def start_up_function(ctx: Context):
     # await load_llm()  # Load the language model and store it globally
     ctx.logger.info("Agent Started")
 # Define a message handler to process incoming messages
-@quote.on_query(model=QuotePrompt)
-async def handle_message(ctx: Context, sender: str, msg: QuotePrompt):
+@quote.on_query(model=Quote)
+async def handle_message(ctx: Context, sender: str, msg: Quote):
     # Define the prompt template without context
     # prompt_without_context = """
     #     You are a motivational coach and life coach. Your goal is to inspire and encourage the user to overcome their current challenges and achieve their goals. Provide me quotes to get motivated for my problems mentioned in the user request. Provide specific, actionable advice, and offer uplifting quotes or affirmations only for the following user request. Don't create your own user requests. Only answer this user request. Do not generate multiple replies from coach. Generate only one response from the coach.

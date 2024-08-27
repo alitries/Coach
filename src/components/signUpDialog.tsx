@@ -108,4 +108,4 @@ const SignUpDialog: React.FC<SignUpDialogProps> = ({ open, onClose }) => {
   );
 };
 
-export default SignUpDialog;
+export { SignUpDialog };

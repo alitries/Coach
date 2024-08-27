@@ -80,25 +80,24 @@ const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiInputBase-root": {
     wordBreak: "break-word",
     overflowWrap: "break-word",
-    color: "#000",
   },
   "& .MuiOutlinedInput-root": {
     borderRadius: 20,
     "& fieldset": {
-      borderColor: "#000",
+      borderColor: theme.palette.text.primary,
     },
     "&:hover fieldset": {
-      borderColor: "#000",
+      borderColor: theme.palette.text.primary,
     },
     "&.Mui-focused fieldset": {
-      borderColor: "#000",
+      borderColor: theme.palette.text.primary,
     },
   },
   "& .MuiInputLabel-root": {
-    color: "#000",
+    color: theme.palette.text.primary,
   },
   "& .MuiInputLabel-root.Mui-focused": {
-    color: "#000",
+    color: theme.palette.text.primary,
   },
 }));
 
@@ -234,10 +233,13 @@ const HabitTracker: React.FC = () => {
           },
         };
 
-        await axios.post("http://localhost:5000/habit/create_user", userData);
+        await axios.post(
+          "https://test.mingchinese.in/habit/create_user",
+          userData
+        );
         alert("User created successfully!");
 
-        await axios.post("http://localhost:5000/habit/set_reminders", {
+        await axios.post("https://test.mingchinese.in/habit/set_reminders", {
           email: userData.email,
           protein_times: userData.protein_times,
           workout_times: userData.workout_times,
@@ -343,39 +345,20 @@ const HabitTracker: React.FC = () => {
           ))}
         </Box> */}
         <StyledTextField
-          className="mb-4 text-white"
+          className="mb-4"
           variant="outlined"
           label={label}
           fullWidth
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
-          sx={{
-            "& .MuiInputLabel-root": {
-              color: "white",
-            },
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "white",
-              },
-              "&:hover fieldset": {
-                borderColor: "white",
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: "white",
-              },
-            },
-          }}
           InputProps={{
-            style: { color: "white", borderColor: "white" },
-
             endAdornment: (
               <InputAdornment position="end">
                 <IconButton
                   aria-label="submit"
-                  onClick={handleSubmit}
                   disabled={loading}
-                  sx={{ color: "white", backgroundColor: "grey" }}
+                  onClick={handleSubmit}
                 >
                   {loading ? <ChatBubbleOutlineIcon /> : <ArrowUpwardIcon />}
                 </IconButton>

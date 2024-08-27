@@ -58,4 +58,4 @@ const OptionsDialog: React.FC<OptionsDialogProps> = ({ open, onClose }) => {
   );
 };
 
-export default OptionsDialog;
+export { OptionsDialog };

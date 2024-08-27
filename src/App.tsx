@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  ReactNode,
-} from "react";
+import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import {
   Cricket,
   HabitTracker,
@@ -12,6 +6,7 @@ import {
   Quotes,
   JavelinCoach,
   Login,
+  Profile,
 } from "./pages/index";
 import { Sidebar, MentalHealthDialog } from "./components/index";
 import {
@@ -26,7 +21,7 @@ import { ThemeProvider } from "@emotion/react";
 import { getAuth, onAuthStateChanged, User } from "firebase/auth";
 import { Typography } from "@mui/material";
 import "../src/firebaseconfig";
-
+import { AccountWrapper } from "./components/index";
 interface AuthContextType {
   user: User | null;
 }
@@ -53,14 +48,14 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
-      setLoading(false); // Stop loading when we know the auth state
+      setLoading(false);
     });
 
-    return () => unsubscribe(); // Cleanup subscription on unmount
+    return () => unsubscribe();
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>; // Or a spinner/loader
+    return <div>Loading...</div>;
   }
 
   return (
@@ -69,17 +64,19 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 };
 
 const Layout: React.FC = () => (
-  <div style={{ display: "flex", height: "100vh" }}>
-    <Sidebar />
-    <div
-      style={{
-        flex: 1,
-        overflow: "auto",
-      }}
-    >
-      <Outlet />
+  <AccountWrapper> {/* Wrap the layout with AccountWrapper */}
+    <div style={{ display: "flex", height: "100vh" }}>
+      <Sidebar />
+      <div
+        style={{
+          flex: 1,
+          overflow: "auto",
+        }}
+      >
+        <Outlet />
+      </div>
     </div>
-  </div>
+  </AccountWrapper>
 );
 
 interface ProtectedRouteProps {
@@ -89,7 +86,7 @@ interface ProtectedRouteProps {
 // Component to protect routes
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const { user } = useAuth();
-  return user ? <>{children}</> : <Navigate to="/login" />;
+  return user ? <>{children}</> : <Navigate to="/" />;
 };
 
 const router = createBrowserRouter([
@@ -152,7 +149,11 @@ const router = createBrowserRouter([
         path: "mental-health",
         element: <MentalHealthDialog open={false} onClose={() => {}} />,
       },
-    ],
+      {
+        path: "profile",
+        element : <Profile />
+      }
+      ],
   },
   {
     index: true,

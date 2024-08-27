@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -6,73 +6,52 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
-import {
-  useTheme,
-  useMediaQuery,
-  Box,
-  Typography,
-} from "@mui/material";
-// Assuming the module exists and is properly exported
+import { Box, Typography } from "@mui/material";
 import { fetchQuote } from "../api/All_api";
 
 const ChatBubble = styled(motion.div)(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
   borderRadius: 20,
   padding: theme.spacing(2),
   marginBottom: theme.spacing(1),
-  maxWidth: "100%",
+  maxWidth: "80%",
   wordBreak: "break-word",
-  alignSelf: "flex-start",
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
-  [theme.breakpoints.down("sm")]: {
-    maxWidth: "100%",
-  },
-}));
-
-const UserBubble = styled(ChatBubble)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
-  alignSelf: "flex-end",
 }));
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiInputBase-root": {
     wordBreak: "break-word",
     overflowWrap: "break-word",
-    color: "#fff",
   },
   "& .MuiOutlinedInput-root": {
     borderRadius: 20,
     "& fieldset": {
-      borderColor: "#fff",
+      borderColor: theme.palette.text.primary,
     },
     "&:hover fieldset": {
-      borderColor: "#fff",
+      borderColor: theme.palette.text.primary,
     },
     "&.Mui-focused fieldset": {
-      borderColor: "#fff",
+      borderColor: theme.palette.text.primary,
     },
   },
   "& .MuiInputLabel-root": {
-    color: "#fff",
+    color: theme.palette.text.primary,
   },
   "& .MuiInputLabel-root.Mui-focused": {
-    color: "#fff",
+    color: theme.palette.text.primary,
   },
 }));
 
 const Quotes: React.FC = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [questionIndex, setQuestionIndex] = useState(0);
-  const [qaHistory, setQaHistory] = useState<
-    { question: string; answer: string }[]
-  >([]);
+  const [messages, setMessages] = useState<{ text: string; sender: "user" | "agent" }[]>([]);
   const [label, setLabel] = useState<string>("");
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const [showWelcome, setShowWelcome] = useState(true);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const labels = [
@@ -83,27 +62,15 @@ const Quotes: React.FC = () => {
       "Enter your answer...",
     ];
 
-    // Randomly pick a label
     const randomLabel = labels[Math.floor(Math.random() * labels.length)];
     setLabel(randomLabel);
   }, []);
 
-  const handleSubmit = async () => {
-    if (!input.trim()) return; // Prevent empty submissions
-
-    setLoading(true);
-
-    try {
-      const response = await fetchQuote(input, ""); // Call the API with user input
-      setQaHistory([...qaHistory, { question: input, answer: response }]);
-      setInput(""); // Clear input after submission
-      setQuestionIndex(questionIndex + 1);
-    } catch (error) {
-      console.error("Error fetching quote:", error);
-    } finally {
-      setLoading(false);
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, [messages]);
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
@@ -111,61 +78,91 @@ const Quotes: React.FC = () => {
     }
   };
 
+  const handleSubmit = async () => {
+    if (!input.trim()) return;
+
+    setLoading(true);
+
+    try {
+      const response = await fetchQuote(input, "");
+      if (response) {
+        setMessages([
+          ...messages,
+          { text: input, sender: "user" },
+          { text: response, sender: "agent" },
+        ]);
+        setInput("");
+        setShowWelcome(false);
+      }
+    } catch (error) {
+      console.error("Error fetching quote:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const ExampleInputs = [
     "I am feeling low today.",
-    "I had a bad day at work and i dont feel like working out.",
-    // "How to make abs at home",
-    // "Provide me recipe for biryani and provide nutritional information about it",
+    "I had a bad day at work and I don't feel like working out.",
   ];
 
   return (
-    <div
-      className="flex flex-col h-screen p-6"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100vh",
-        backgroundColor: "#1d1d1d",
-        justifyContent: "flex-end",
-        alignItems: "center", // Ensure centering in the main axis
-        overflowX: "hidden", // Prevent horizontal overflow
-      }}
-    >
-      <div
-        className="w-full max-w mx-auto"
-        style={{ flex: "none", alignSelf: "center" }}
-      >
-        <div
-          className="relative w-full"
-          style={{
-            textAlign: isSmallScreen ? "center" : "left",
-            maxWidth: isSmallScreen ? "90%" : "70%",
-            marginBottom: "16px",
-            overflowX: "hidden", // Prevent horizontal overflow
-          }}
-        >
-          {qaHistory.map((qa, index) => (
-            <div key={index}>
-              <ChatBubble
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+    <div className="flex flex-col h-screen p-6">
+      <div className="flex flex-col flex-grow relative">
+        {showWelcome && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <Typography
+                variant="h1"
+                className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
               >
-                <ChatBubbleOutlineIcon style={{ marginRight: "8px" }} />
-                <strong>Motivational Coach: {qa.answer}</strong>
-              </ChatBubble>
-
-              <UserBubble
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                Welcome to Quotes Section
+              </Typography>
+              <Typography
+                variant="h6"
+                color="textSecondary"
+                className="text-start mt-2"
               >
-                <div>
-                  <b>You:</b> {qa.question}
-                </div>
-              </UserBubble>
+                How can I assist you today?
+              </Typography>
             </div>
+          </div>
+        )}
+        <div
+          className={`flex flex-col flex-grow overflow-auto p-4 space-y-2 ${
+            showWelcome ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {messages.map((message, index) => (
+            <ChatBubble
+              key={index}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className={
+                message.sender === "user" ? "user-bubble" : "agent-bubble"
+              }
+              sx={{
+                backgroundColor: message.sender === "user" ? "white" : "white",
+                color: message.sender === "user" ? "black" : "black",
+                alignSelf:
+                  message.sender === "user" ? "flex-end" : "flex-start",
+              }}
+            >
+              <Typography variant="body1" className="font-bold">
+                {message.sender === "user" ? (
+                  <>
+                    <strong>You:</strong> {message.text}
+                  </>
+                ) : (
+                  <>
+                    <strong>Motivational Coach:</strong> {message.text}
+                  </>
+                )}
+              </Typography>
+            </ChatBubble>
           ))}
+          <div ref={messagesEndRef} />
         </div>
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
@@ -173,13 +170,12 @@ const Quotes: React.FC = () => {
             <Box
               key={index}
               sx={{
-                border: "1px solid #ccc",
-                borderRadius: "4px",
+                border: "1px solid",
+                borderRadius: "8px",
                 padding: "8px",
-                width: "48%", // Adjust width to fit two boxes side by side
+                width: "48%",
                 textAlign: "center",
-                backgroundColor: "#1d1d1d",
-                color: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.02)",
                 cursor: "pointer",
               }}
               onClick={() => setInput(example)}
@@ -188,6 +184,7 @@ const Quotes: React.FC = () => {
             </Box>
           ))}
         </Box>
+
         <StyledTextField
           className="mb-4"
           variant="outlined"
@@ -197,14 +194,12 @@ const Quotes: React.FC = () => {
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
           InputProps={{
-            style: { color: "white" },
             endAdornment: (
               <InputAdornment position="end">
                 <IconButton
                   aria-label="submit"
-                  onClick={handleSubmit}
                   disabled={loading}
-                  sx={{ color: "black", backgroundColor: "grey" }}
+                  onClick={handleSubmit}
                 >
                   {loading ? <ChatBubbleOutlineIcon /> : <ArrowUpwardIcon />}
                 </IconButton>

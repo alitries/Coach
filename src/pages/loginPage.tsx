@@ -22,8 +22,8 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import GoogleIcon from "@mui/icons-material/Google";
-import SignUpDialog from "../components/signUpDialog";
 import "../firebaseconfig";
+import { SignUpDialog } from "../components/index";
 
 const Login: React.FC = () => {
   const auth = getAuth();
