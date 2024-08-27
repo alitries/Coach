@@ -134,7 +134,7 @@ const router = createBrowserRouter([
         element: <HabitTracker />,
       },
       {
-        path: "cricket",
+        path: "cricket-coach",
         element: <Cricket />,
       },
       {

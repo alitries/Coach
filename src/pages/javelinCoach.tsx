@@ -57,6 +57,7 @@ const JavelinCoach: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [label, setLabel] = useState<string>("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [showWelcome, setShowWelcome] = useState<boolean>(true);
 
   useEffect(() => {
     const labels = [
@@ -107,6 +108,8 @@ const JavelinCoach: React.FC = () => {
         ...newMessages,
         { text: "Sorry, something went wrong.", sender: "agent" },
       ]);
+      setInput("");
+      setShowWelcome(false);
     } finally {
       setLoading(false);
       setInput("");
@@ -124,6 +127,30 @@ const JavelinCoach: React.FC = () => {
     <div className="flex flex-col h-screen p-6">
       <div className="flex flex-col flex-grow">
         <div className="flex flex-col flex-grow overflow-auto p-4 space-y-2">
+        {showWelcome && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <Typography
+                variant="h1"
+                className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+              >
+                Welcome to Javelin Coach
+              </Typography>
+              <Typography
+                variant="h6"
+                color="textSecondary"
+                className="text-start mt-2"
+              >
+                How can I assist you with Javelin today?
+              </Typography>
+            </div>
+          </div>
+        )}
+        <div
+          className={`flex flex-col flex-grow overflow-auto p-4 space-y-2 ${
+            showWelcome ? "opacity-0" : "opacity-100"
+          }`}
+        >
           {messages.map((message, index) => (
             <ChatBubble
               key={index}
@@ -149,6 +176,7 @@ const JavelinCoach: React.FC = () => {
           ))}
           <div ref={messagesEndRef} /> {/* Ref to scroll to */}
         </div>
+      </div>
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (

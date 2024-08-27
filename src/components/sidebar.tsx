@@ -104,14 +104,14 @@ const Sidebar: React.FC = () => {
       <List>
         {[
           {
-            text: "Sports Coach",
-            icon: <SportsBasketballIcon />,
-            dialogOpen: handleOptionsDialogOpen,
-          },
-          {
             text: "Primary Agent",
             icon: <AccountCircleIcon />,
             path: "/primary-agent",
+          },
+          {
+            text: "Sports Coach",
+            icon: <SportsBasketballIcon />,
+            dialogOpen: handleOptionsDialogOpen,
           },
           {
             text: "Motivational Coach",

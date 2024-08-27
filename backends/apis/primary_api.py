@@ -25,7 +25,6 @@ class GeneralTalkingPrompt(Model):
     prompt: str
     context: str
 
-# Addresses of the different agents responsible for handling specific tasks
 prompt_address = "agent1qglw3d720l82th35rkfaufjcstlklsqweu3rkfr7dchq493gmhc65hp6aqy"
 exercise_address = "agent1q06c6pp2dhsv86yz9tehxa0525xt8qfmu28p0hnx894yjhh3g6kp7ls2tk8"
 recipe_address = "agent1qwqvnh74245xayv5qe9r92wf95pw8yv8nzvz2m4ydn2vpqze5fmky53rytk"

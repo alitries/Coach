@@ -4,6 +4,7 @@ from apis.quote_api import quote_api
 from apis.javelin_api import javelin_api
 from apis.mental_health_api import mental_health_api
 from apis.primary_api import primary_api
+from apis.cricket_api import cricket_api
 
 from habit_tracker.habittracker_main import habit_api, run_scheduler
 
@@ -18,6 +19,7 @@ app.register_blueprint(javelin_api, url_prefix='/javelin')
 app.register_blueprint(mental_health_api, url_prefix='/mental_health')
 app.register_blueprint(primary_api, url_prefix='/primary')
 app.register_blueprint(habit_api, url_prefix='/habit')
+app.register_blueprint(cricket_api, url_prefix='/cricket')
 
 if __name__ == '__main__':
     try:
