@@ -7,7 +7,7 @@ import json
 javelin_api = Blueprint('javelin_api', __name__)
 
 # Model classes for the agent
-class JavelinePrompt(Model):
+class JavelinPrompt(Model):
     prompt: str
 
 class Response(Model):
@@ -39,7 +39,7 @@ def get_quote():
 
 # Function to interact with the agent
 async def query_agent(prompt):
-    response = await query(destination=quote_address, message=JavelinePrompt(prompt=prompt), timeout=300.0)
+    response = await query(destination=quote_address, message=JavelinPrompt(prompt=prompt), timeout=300.0)
     print(response)
     
     data = json.loads(response.decode_payload())

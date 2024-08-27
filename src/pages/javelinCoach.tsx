@@ -88,11 +88,12 @@ const JavelinCoach: React.FC = () => {
     if (input.trim() === "") return;
 
     setLoading(true);
+    setShowWelcome(false); // Hide the welcome message when user submits
 
     // Add user's message to chat
     const newMessages: Message[] = [
       ...messages,
-      { text: input, sender: "user" as "user" },
+      { text: input, sender: "user" },
     ];
     setMessages(newMessages);
 
@@ -108,8 +109,6 @@ const JavelinCoach: React.FC = () => {
         ...newMessages,
         { text: "Sorry, something went wrong.", sender: "agent" },
       ]);
-      setInput("");
-      setShowWelcome(false);
     } finally {
       setLoading(false);
       setInput("");
@@ -127,56 +126,56 @@ const JavelinCoach: React.FC = () => {
     <div className="flex flex-col h-screen p-6">
       <div className="flex flex-col flex-grow">
         <div className="flex flex-col flex-grow overflow-auto p-4 space-y-2">
-        {showWelcome && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <Typography
-                variant="h1"
-                className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
-              >
-                Welcome to Javelin Coach
-              </Typography>
-              <Typography
-                variant="h6"
-                color="textSecondary"
-                className="text-start mt-2"
-              >
-                How can I assist you with Javelin today?
-              </Typography>
+          {showWelcome && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center">
+                <Typography
+                  variant="h1"
+                  className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                >
+                  Welcome to Javelin Coach
+                </Typography>
+                <Typography
+                  variant="h6"
+                  color="textSecondary"
+                  className="text-start mt-2"
+                >
+                  How can I assist you with Javelin today?
+                </Typography>
+              </div>
             </div>
+          )}
+          <div
+            className={`flex flex-col flex-grow overflow-auto p-4 space-y-2 transition-opacity duration-500 ${
+              showWelcome ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            {messages.map((message, index) => (
+              <ChatBubble
+                key={index}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className={
+                  message.sender === "user" ? "user-bubble" : "agent-bubble"
+                }
+                sx={{
+                  backgroundColor: message.sender === "user" ? "white" : "white",
+                  color: message.sender === "user" ? "black" : "black",
+                  alignSelf:
+                    message.sender === "user" ? "flex-end" : "flex-start",
+                }}
+              >
+                <Typography variant="body1">
+                  {message.sender === "user"
+                    ? `You: ${message.text}`
+                    : `Agent: ${message.text}`}
+                </Typography>
+              </ChatBubble>
+            ))}
+            <div ref={messagesEndRef} /> {/* Ref to scroll to */}
           </div>
-        )}
-        <div
-          className={`flex flex-col flex-grow overflow-auto p-4 space-y-2 ${
-            showWelcome ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {messages.map((message, index) => (
-            <ChatBubble
-              key={index}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className={
-                message.sender === "user" ? "user-bubble" : "agent-bubble"
-              }
-              sx={{
-                backgroundColor: message.sender === "user" ? "white" : "white",
-                color: message.sender === "user" ? "black" : "black",
-                alignSelf:
-                  message.sender === "user" ? "flex-end" : "flex-start",
-              }}
-            >
-              <Typography variant="body1">
-                {message.sender === "user"
-                  ? `You: ${message.text}`
-                  : `Agent: ${message.text}`}
-              </Typography>
-            </ChatBubble>
-          ))}
-          <div ref={messagesEndRef} /> {/* Ref to scroll to */}
         </div>
-      </div>
 
         <Box display="flex" flexWrap="wrap" gap={2} mb={2}>
           {ExampleInputs.map((example, index) => (
