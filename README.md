@@ -35,7 +35,7 @@ To run the project in your localhost you must run the following command
   pnpm start
 ```    
 
-- pnpm is being used as the package management tool of choice - 
+- pnpm is being used as the package management tool of choice - (You can use ```npm install``` as well if you have node package manager installed.)
 
     https://pnpm.io/installation
 
@@ -45,24 +45,31 @@ To download and install the libraries used in the Project Run the following comm
 ```bash
   pip install -r requirements.txt
 ```
-To run the project in your localhost you must run refer to the documentation.
+To run the project in your localhost, you'll need to refer to the documentation.
 
 
 ## Documentation
 
 - Request the access for the model Llama-2-7b-chat-hf - [Hugging Face Llama 2 Model](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
  - Now you need to create an access token.
- - Now replace the old access token whervever that it is present there with the new access token that has been made.
-    - You need to create a API key for google maps- https://developers.google.com/maps/documentation/javascript/get-api-key
+ - Now replace the old access token wherever it is present in the code with the new access token that has been made.
+    - You need to create an API key for Google Maps- https://developers.google.com/maps/documentation/javascript/get-api-key
 
 
 ### Backend
-- Now you need to create multiple terminals to run the different python scripts.
-- You need to run the python scripts in their respective orders mentioned below.
+- Now you must create multiple terminals to run the different Python scripts.
+- You need to run the Python scripts in their respective orders mentioned below.
+
+- To run the server file you must run the following command.
+
+      cd .\backends\
+  Then run the following Python script, this script will run all the agent's servers together.
+
+   ```python server.py```
 
     - First comes the feature **Primary Agent** to run this agent you need to run the following scripts in order. 
 
-            cd .\backends\primary-backend
+            cd .\backends\primary
         
         ```1. python exercise.py```
 
@@ -72,42 +79,30 @@ To run the project in your localhost you must run refer to the documentation.
 
         ```4. python generalTalking.py```
 
-        ```5. python primary.py```
+    - The second agent is the **Motivational Quote Generator** to run this you need to run the following scripts in order.
 
-    - The second agent is the **Quote Generator** to run this you need to run the following scripts in order.
-
-            cd .\backends\quote-backend
+            cd .\backends\agents
 
         ```1. python quote.py```
 
-        ```2. python quote_main.py```
+    - The third agent is the **Sports Agent** to run this you are required to run the following scripts.
 
-
-    - The third agent is the **Sports Agent** to run this you are required to run the following script.
-
-            cd .\backends\javelin-backend
+            cd .\backends\agents\
 
         ```1. python javelin.py```
+        
+        ```2. python cricket.py```
 
-        ```2. python javelin_main.py```
-
-
-    - The fourth agent is the **Habit Tracker Agent** for this you would need to run the following scripts.
-
-            cd .\backends\habit-tracker-backend
-
-        ```1. python habittracker.py```
-
-        ```2. python habittracker_main.py```
+    - The fourth agent is the **Habit Tracker Agent**.
+        - You do not need to specifically run any file for this the server.py file will execute it.
+        
+    - The fifth agent is the "Mental Health Booster Agent".
+        - You do not need to specifically run any file for this the server.py file will execute it.
 
 
-    - The fifth agent is the "Mental Health Booster Agent" to run this agent you need to run the following scripts.
+      
 
-            cd .\backends\mental-health-backend
 
-        ```1. python mental.py```
-
-        ```2. python app.py```
 
 
 
