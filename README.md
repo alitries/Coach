@@ -35,7 +35,7 @@ To run the project in your localhost you must run the following command
   pnpm start
 ```    
 
-- pnpm is being used as the package management tool of choice - (You can use ```npm install``` as well if you have node package manager installed.)
+- pnpm is being used as the package management tool of choice.
 
     https://pnpm.io/installation
 
